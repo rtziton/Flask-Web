@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %}register{% endblock %}
+{% block head %}{{ super() }}{% endblock %}
+{% block content %}
+
+  <h1>register</h1>
+  <p class="important">
+    Welcome to my awesome homepage.
+
+    <form method="post" action="/register">
+      user name<input name="user"><br>
+      password <input name="pwd"><br>
+      E-mail <input name="mail"><br>
+      Nickname <input name="nick"><br>
+    
+  
+      <input type="submit" value="create">
+    </form> 
+{% endblock %}
+   

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}Welcome{% endblock %}
+{% block head %}{{ super() }}{% endblock %}
+{% block content %}
+
+  <h1>Welcome</h1>
+  <button onclick="test()">test</button>
+  <script>
+    const tets=()=>{
+        console.log("test");
+    }
+  </script>
+  
+  user name<input>
+  <p class="important">
+    Welcome to my awesome About page.
+{% endblock %}

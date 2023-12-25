@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}login{% endblock %}
+{% block head %}{{ super() }}{% endblock %}
+{% block content %}
+
+  <h1>Login</h1>
+  <p class="important">
+    Welcome to my awesome homepage.
+
+    <form method="post" action="/login">
+      user name<input name="user">
+      password<input name="pwd">
+      <input type="submit" value="send">
+    </form>
+{% endblock %}
+   
